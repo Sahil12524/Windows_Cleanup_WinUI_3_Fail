@@ -11,6 +11,14 @@
       <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />
     </application>
   </compatibility>
+
+	<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+		<security>
+			<requestedPrivileges>
+				<requestedExecutionLevel level="highestAvailable" uiAccess="false" />
+			</requestedPrivileges>
+		</security>
+	</trustInfo>
   
   <application xmlns="urn:schemas-microsoft-com:asm.v3">
     <windowsSettings>

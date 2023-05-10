@@ -6,6 +6,7 @@ E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windo
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\Windows_Cleanup_WinUI_3.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\Windows_Cleanup_WinUI_3.pdb
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\resources.pri
+E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\Microsoft.InteractiveExperiences.Projection.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\Microsoft.WinUI.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\Microsoft.Windows.AppLifecycle.Projection.dll
@@ -283,5 +284,4 @@ E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x86\Release\net6.0-windo
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x86\Release\net6.0-windows10.0.19041.0\win10-x86\qualifiers.txt
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x86\Release\net6.0-windows10.0.19041.0\win10-x86\qualifiers.txt.intermediate
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x86\Release\net6.0-windows10.0.19041.0\win10-x86\MultipleQualifiersPerDimensionFound.txt
-E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x86\Release\net6.0-windows10.0.19041.0\win10-x86\AppxManifest.xml
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x86\Release\net6.0-windows10.0.19041.0\win10-x86\ProjectArchitectures.txt

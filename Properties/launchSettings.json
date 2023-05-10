@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Windows_Cleanup_WinUI_3 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Windows_Cleanup_WinUI_3 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

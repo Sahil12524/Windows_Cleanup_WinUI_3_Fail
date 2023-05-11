@@ -29,7 +29,7 @@
         </Grid>
 
         <NavigationView x:ConnectionId='3' Grid.Row="1"
-                        IsBackButtonVisible="Collapsed"
+                        IsBackButtonVisible="Auto"
                         IsSettingsVisible="True"
                         x:Name="NavView"                                                                                                      >
             <NavigationView.MenuItems>

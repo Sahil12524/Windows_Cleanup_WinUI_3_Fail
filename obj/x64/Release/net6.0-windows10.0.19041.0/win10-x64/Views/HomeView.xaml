@@ -12,8 +12,46 @@
     xmlns:BackdropMaterial.ApplyToRootOrPageBackground="True">
     <!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
 
-    <Grid>
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <!--<Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>-->
+            <StackPanel Grid.Row="0">
+                <TextBlock Text="Hello there," FontSize="20" VerticalAlignment="Top" TextWrapping="WrapWholeWords" Padding="30,30,0,0" Style="{StaticResource SubtitleTextBlockStyle}"/>
+                <TextBlock FontSize="18" TextWrapping="WrapWholeWords" Padding="30,10,0,0" Style="{StaticResource BodyTextBlockStyle}">
+                    Thanks for using my app. Use this app daily to ensure a fast and healty system. <LineBreak/>
+                    This app is build for those who need ease of use for their PC. <LineBreak/>
+                    Especially gamers will love this app.
+                </TextBlock>
+            </StackPanel>
 
-    </Grid>
+            <StackPanel Grid.Row="1">
+                <TextBlock Text="Why to use this app?" FontSize="20" VerticalAlignment="Top" TextWrapping="WrapWholeWords" Padding="30,30,30,0" Style="{StaticResource SubtitleTextBlockStyle}"/>
+                <TextBlock FontSize="18" TextWrapping="WrapWholeWords" Padding="30,10,30,0" Style="{StaticResource BodyTextBlockStyle}">
+                    This app has user friendly design to make this app useable by every one, <LineBreak/>
+                    it does not matters if it is a child or a elderly person. <LineBreak/>
+                    This app makes the whole process safe and simple, saves your lot of percious time.
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2">
+                <TextBlock Text="How this app works?" FontSize="20" VerticalAlignment="Top" TextWrapping="WrapWholeWords" Padding="30,30,0,0" Style="{StaticResource SubtitleTextBlockStyle}"/>
+                <TextBlock FontSize="18" TextWrapping="WrapWholeWords" Padding="30,10,0,0" Style="{StaticResource BodyTextBlockStyle}">
+                    This app will remove Temp, %Temp% and Prefetch all at once, <LineBreak/>
+                    which are known to be junk files. <LineBreak/>
+                    Btw this app can do other things too apart from just a cleaning task.
+                </TextBlock>
+            </StackPanel>
+
+        </Grid>
+    </ScrollViewer>
 </Page>
 

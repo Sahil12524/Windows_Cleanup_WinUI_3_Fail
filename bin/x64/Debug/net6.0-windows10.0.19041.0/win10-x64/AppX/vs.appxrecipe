@@ -29,29 +29,29 @@
     <AppXManifest Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-11T06:38:37.575</Modified>
+      <Modified>2023-05-11T08:21:50.881</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-11T06:37:57.899</Modified>
+      <Modified>2023-05-11T08:21:50.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.runtimeconfig.json">
       <PackagePath>Windows_Cleanup_WinUI_3.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-11T06:37:57.845</Modified>
+      <Modified>2023-05-11T08:21:50.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.dll">
       <PackagePath>Windows_Cleanup_WinUI_3.dll</PackagePath>
-      <Modified>2023-05-11T06:38:37.253</Modified>
+      <Modified>2023-05-11T08:21:50.379</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Windows_Cleanup_WinUI_3.exe</PackagePath>
-      <Modified>2023-05-11T06:38:37.343</Modified>
+      <Modified>2023-05-11T08:21:50.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.deps.json">
       <PackagePath>Windows_Cleanup_WinUI_3.deps.json</PackagePath>
-      <Modified>2023-05-11T06:37:57.843</Modified>
+      <Modified>2023-05-11T08:21:50.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sahil\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.16\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

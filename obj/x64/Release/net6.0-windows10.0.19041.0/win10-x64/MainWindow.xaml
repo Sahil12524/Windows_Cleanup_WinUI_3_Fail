@@ -21,21 +21,22 @@
                    HorizontalAlignment="Left" 
                    Width="16" Height="16" 
                    Margin="8,0"/>
-            <TextBlock x:ConnectionId='3' x:Name="AppTitleTextBlock" Text="Windows Cleanup"
+            <TextBlock x:ConnectionId='5' x:Name="AppTitleTextBlock" Text="Windows Cleanup"
                        TextWrapping="NoWrap"
                        Style="{StaticResource CaptionTextBlockStyle}" 
                        VerticalAlignment="Center"
                        Margin="28,0,0,0"/>
         </Grid>
 
-        <NavigationView Grid.Row="1"
-                        IsBackButtonVisible="Collapsed"
-                        IsSettingsVisible="False">
-            <StackPanel>
-                <TextBlock Text="Content" 
-                           Style="{ThemeResource TitleTextBlockStyle}"
-                           Margin="32,0,0,0"/>
-            </StackPanel>
+        <NavigationView x:ConnectionId='3' Grid.Row="1"
+                        IsBackButtonVisible="Auto"
+                        IsSettingsVisible="True"
+                        x:Name="NavView"                                                                                                      >
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Home" Tag="HomeView"  Icon="Home"/>
+                <NavigationViewItem Content="Basic Tools" Tag="BasicToolsView"  Icon="Globe"/>
+            </NavigationView.MenuItems>
+            <Frame x:ConnectionId='4' x:Name="ContentFrame"                                                 />
         </NavigationView>
     </Grid>
 </Window>

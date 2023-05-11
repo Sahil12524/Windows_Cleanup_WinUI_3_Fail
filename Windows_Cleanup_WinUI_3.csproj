@@ -15,6 +15,9 @@
   <ItemGroup>
     <None Remove="Assets\cleaning broom.ico" />
     <None Remove="Assets\cleaning_broom32x32.png" />
+    <None Remove="Views\BasicToolsView.xaml" />
+    <None Remove="Views\HomeView.xaml" />
+    <None Remove="Views\SettingsView.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +43,21 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\BasicToolsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\SettingsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\HomeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!-- 

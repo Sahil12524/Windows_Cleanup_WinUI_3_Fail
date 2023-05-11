@@ -29,13 +29,14 @@
         </Grid>
 
         <NavigationView Grid.Row="1"
-                        IsBackButtonVisible="Collapsed"
-                        IsSettingsVisible="False">
-            <StackPanel>
-                <TextBlock Text="Content" 
-                           Style="{ThemeResource TitleTextBlockStyle}"
-                           Margin="32,0,0,0"/>
-            </StackPanel>
+                        IsBackButtonVisible="Auto"
+                        IsSettingsVisible="True"
+                        x:Name="NavView" ItemInvoked="NavView_ItemInvoked" Loaded="NavView_Loaded" SelectionChanged="NavView_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Home" Tag="HomeView"  Icon="Home"/>
+                <NavigationViewItem Content="Basic Tools" Tag="BasicToolsView"  Icon="Globe"/>
+            </NavigationView.MenuItems>
+            <Frame x:Name="ContentFrame" NavigationFailed="ContentFrame_NavigationFailed"/>
         </NavigationView>
     </Grid>
 </Window>

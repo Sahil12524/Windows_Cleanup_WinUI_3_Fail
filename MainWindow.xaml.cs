@@ -3,8 +3,13 @@
 
 using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Media.Animation;
+using Microsoft.UI.Xaml.Navigation;
+using System.Reflection;
 using System.Runtime.InteropServices; // For DllImport
+using Windows_Cleanup_WinUI_3.Views;
 using WinRT; // required to support Window.As<ICompositionSupportsSystemBackdrop>()
 
 // To learn more about WinUI, the WinUI project structure,
@@ -20,6 +25,8 @@ namespace Windows_Cleanup_WinUI_3
         WindowsSystemDispatcherQueueHelper m_wsdqHelper; // See below for implementation.
         MicaController m_backdropController;
         SystemBackdropConfiguration m_configurationSource;
+
+        private NavigationViewItem _lastItem;
 
         public MainWindow()
         {
@@ -63,7 +70,7 @@ namespace Windows_Cleanup_WinUI_3
             }
         }
 
-        bool TrySetSystemBackdrop()
+        public bool TrySetSystemBackdrop()
         {
             if (MicaController.IsSupported())
             {
@@ -139,6 +146,70 @@ namespace Windows_Cleanup_WinUI_3
             {
                 AppTitleTextBlock.Foreground =
                     (SolidColorBrush)App.Current.Resources["WindowCaptionForeground"];
+            }
+        }
+
+        private void ContentFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
+        {
+
+        }
+
+        private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            var item = args.InvokedItemContainer as NavigationViewItem;
+            if (item == null || item == _lastItem)
+                return;
+            var ClickedView = item.Tag?.ToString();
+            //NavView.Header = $"{ClickedView}";
+            if (!NavigateToView(ClickedView)) return;
+            _lastItem = item;
+        }
+
+        private bool NavigateToView(string clickedView)
+        {
+            var view = Assembly.GetExecutingAssembly().GetType($"Windows_Cleanup_WinUI_3.Views.{clickedView}");
+            if (string.IsNullOrWhiteSpace(clickedView) || view == null)
+                return false;
+            ContentFrame.Navigate(view, null, new EntranceNavigationTransitionInfo());
+            return true;
+        }
+
+        private void NavView_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach (NavigationViewItemBase item in NavView.MenuItems)
+            {
+                if (item is NavigationViewItem && item.Tag.ToString() == "HomeView")
+                {
+                    NavView.SelectedItem = item;
+                    break;
+                }
+            }
+            ContentFrame.Navigate(typeof(HomeView));
+        }
+
+        private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        { 
+            if (args.IsSettingsSelected)
+            {
+                ContentFrame.Navigate(typeof(SettingsView));
+                NavView.Header = "Settings";
+            }
+            else
+            {
+                NavigationViewItem item = args.SelectedItem as NavigationViewItem;
+                switch (item.Tag)
+                {
+                    case "HomeView":
+                        ContentFrame.Navigate(typeof(HomeView));
+                        NavView.Header = "Home";
+                        break;
+                    case "BasicToolsView":
+                        ContentFrame.Navigate(typeof(BasicToolsView));
+                        NavView.Header = "Basic Tools";
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }

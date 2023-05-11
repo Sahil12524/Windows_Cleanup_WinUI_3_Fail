@@ -224,7 +224,7 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[40];
+            _typeNameTable = new string[37];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -257,16 +257,13 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
             _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.Control";
             _typeNameTable[30] = "Windows_Cleanup_WinUI_3.MainWindow";
             _typeNameTable[31] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.Expander";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
-            _typeNameTable[35] = "Windows_Cleanup_WinUI_3.Views.BasicToolsView";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[38] = "Windows_Cleanup_WinUI_3.Views.HomeView";
-            _typeNameTable[39] = "Windows_Cleanup_WinUI_3.Views.SettingsView";
+            _typeNameTable[32] = "Windows_Cleanup_WinUI_3.Views.BasicToolsView";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[35] = "Windows_Cleanup_WinUI_3.Views.HomeView";
+            _typeNameTable[36] = "Windows_Cleanup_WinUI_3.Views.SettingsView";
 
-            _typeTable = new global::System.Type[40];
+            _typeTable = new global::System.Type[37];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -299,14 +296,11 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
             _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
             _typeTable[30] = typeof(global::Windows_Cleanup_WinUI_3.MainWindow);
             _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
-            _typeTable[35] = typeof(global::Windows_Cleanup_WinUI_3.Views.BasicToolsView);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[38] = typeof(global::Windows_Cleanup_WinUI_3.Views.HomeView);
-            _typeTable[39] = typeof(global::Windows_Cleanup_WinUI_3.Views.SettingsView);
+            _typeTable[32] = typeof(global::Windows_Cleanup_WinUI_3.Views.BasicToolsView);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[35] = typeof(global::Windows_Cleanup_WinUI_3.Views.HomeView);
+            _typeTable[36] = typeof(global::Windows_Cleanup_WinUI_3.Views.SettingsView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -347,10 +341,9 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
         private object Activate_25_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
         private object Activate_28_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_30_MainWindow() { return new global::Windows_Cleanup_WinUI_3.MainWindow(); }
-        private object Activate_32_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
-        private object Activate_35_BasicToolsView() { return new global::Windows_Cleanup_WinUI_3.Views.BasicToolsView(); }
-        private object Activate_38_HomeView() { return new global::Windows_Cleanup_WinUI_3.Views.HomeView(); }
-        private object Activate_39_SettingsView() { return new global::Windows_Cleanup_WinUI_3.Views.SettingsView(); }
+        private object Activate_32_BasicToolsView() { return new global::Windows_Cleanup_WinUI_3.Views.BasicToolsView(); }
+        private object Activate_35_HomeView() { return new global::Windows_Cleanup_WinUI_3.Views.HomeView(); }
+        private object Activate_36_SettingsView() { return new global::Windows_Cleanup_WinUI_3.Views.SettingsView(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -595,56 +588,31 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
                 xamlType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.Expander
-                userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_32_Expander;
-                userType.AddMemberName("Header");
-                userType.AddMemberName("ExpandDirection");
-                userType.AddMemberName("HeaderTemplate");
-                userType.AddMemberName("HeaderTemplateSelector");
-                userType.AddMemberName("IsExpanded");
-                userType.AddMemberName("TemplateSettings");
-                xamlType = userType;
-                break;
-
-            case 33:   //  Microsoft.UI.Xaml.Controls.ExpandDirection
-                userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.AddEnumValue("Down", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Down);
-                userType.AddEnumValue("Up", global::Microsoft.UI.Xaml.Controls.ExpandDirection.Up);
-                xamlType = userType;
-                break;
-
-            case 34:   //  Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings
-                userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 35:   //  Windows_Cleanup_WinUI_3.Views.BasicToolsView
+            case 32:   //  Windows_Cleanup_WinUI_3.Views.BasicToolsView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_35_BasicToolsView;
+                userType.Activator = Activate_32_BasicToolsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Controls.Page
+            case 33:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 34:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Windows_Cleanup_WinUI_3.Views.HomeView
+            case 35:   //  Windows_Cleanup_WinUI_3.Views.HomeView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_38_HomeView;
+                userType.Activator = Activate_35_HomeView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 39:   //  Windows_Cleanup_WinUI_3.Views.SettingsView
+            case 36:   //  Windows_Cleanup_WinUI_3.Views.SettingsView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_39_SettingsView;
+                userType.Activator = Activate_36_SettingsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1152,61 +1120,6 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_48_Expander_Header(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.Header;
-        }
-        private void set_48_Expander_Header(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_49_Expander_ExpandDirection(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.ExpandDirection;
-        }
-        private void set_49_Expander_ExpandDirection(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.ExpandDirection = (global::Microsoft.UI.Xaml.Controls.ExpandDirection)Value;
-        }
-        private object get_50_Expander_HeaderTemplate(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.HeaderTemplate;
-        }
-        private void set_50_Expander_HeaderTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_51_Expander_HeaderTemplateSelector(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.HeaderTemplateSelector;
-        }
-        private void set_51_Expander_HeaderTemplateSelector(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.HeaderTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
-        }
-        private object get_52_Expander_IsExpanded(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.IsExpanded;
-        }
-        private void set_52_Expander_IsExpanded(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            that.IsExpanded = (global::System.Boolean)Value;
-        }
-        private object get_53_Expander_TemplateSettings(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.Expander)instance;
-            return that.TemplateSettings;
-        }
 
         private global::Microsoft.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -1550,47 +1463,6 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_47_NavigationViewItemBase_IsSelected;
                 xamlMember.Setter = set_47_NavigationViewItemBase_IsSelected;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.Header":
-                userType = (global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlMember(this, "Header", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_48_Expander_Header;
-                xamlMember.Setter = set_48_Expander_Header;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.ExpandDirection":
-                userType = (global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlMember(this, "ExpandDirection", "Microsoft.UI.Xaml.Controls.ExpandDirection");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_Expander_ExpandDirection;
-                xamlMember.Setter = set_49_Expander_ExpandDirection;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplate":
-                userType = (global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_Expander_HeaderTemplate;
-                xamlMember.Setter = set_50_Expander_HeaderTemplate;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.HeaderTemplateSelector":
-                userType = (global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlMember(this, "HeaderTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_Expander_HeaderTemplateSelector;
-                xamlMember.Setter = set_51_Expander_HeaderTemplateSelector;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.IsExpanded":
-                userType = (global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_Expander_IsExpanded;
-                xamlMember.Setter = set_52_Expander_IsExpanded;
-                break;
-            case "Microsoft.UI.Xaml.Controls.Expander.TemplateSettings":
-                userType = (global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Expander");
-                xamlMember = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings");
-                xamlMember.Getter = get_53_Expander_TemplateSettings;
-                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;

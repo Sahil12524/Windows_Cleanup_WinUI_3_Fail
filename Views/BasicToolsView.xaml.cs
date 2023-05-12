@@ -6,7 +6,6 @@ using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Xml.Serialization;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -18,12 +17,13 @@ namespace Windows_Cleanup_WinUI_3.Views
     /// </summary>
     public sealed partial class BasicToolsView : Page
     {
+
         public BasicToolsView()
         {
             this.InitializeComponent();
         }
 
-        public void cmdExec(string? path)
+        private void cmdExec(string? path)
         {
             try
             {

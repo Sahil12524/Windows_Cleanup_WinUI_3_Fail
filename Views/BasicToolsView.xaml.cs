@@ -53,22 +53,22 @@ namespace Windows_Cleanup_WinUI_3.Views
 
         private void btnTempFilesRemove_Click(object sender, RoutedEventArgs e)
         {
-            cmdExec(@"Scripts\\cleanscript.bat");
+            cmdExec(@"Scripts\\BasicTools\\cleanscript.bat");
         }
 
         private void btnWindowsUpdateCacheClean_Click(object sender, RoutedEventArgs e)
         {
-            cmdExec(@"Scripts\\WindowsUpdateCacheRemove.bat");
+            cmdExec(@"Scripts\\BasicTools\\WindowsUpdateCacheRemove.bat");
         }
 
         private void btnCHKDSK_Click(object sender, RoutedEventArgs e)
         {
-            cmdExec(@"Scripts\\CheckDiskError.bat");
+            cmdExec(@"Scripts\\BasicTools\\CheckDiskError.bat");
         }
 
         private void btnSSDTrim_Click(object sender, RoutedEventArgs e)
         {
-            cmdExec(@"Scripts\\SSDOPTIMIZE.bat");
+            cmdExec(@"Scripts\\BasicTools\\SSDOPTIMIZE.bat");
         }
     }
 }

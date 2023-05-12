@@ -207,6 +207,11 @@ namespace Windows_Cleanup_WinUI_3
                         ContentFrame.Navigate(typeof(BasicToolsView));
                         NavView.Header = "Basic Tools";
                         break;
+                    case "NetToolsView":
+                        ContentFrame.Navigate(typeof(NetToolsView));
+                        NavView.Header = "Net Tools";
+                        break;
+
                     default:
                         break;
                 }

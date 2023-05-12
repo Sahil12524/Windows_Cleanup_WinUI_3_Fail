@@ -34,7 +34,8 @@
                         x:Name="NavView" ItemInvoked="NavView_ItemInvoked" Loaded="NavView_Loaded" SelectionChanged="NavView_SelectionChanged">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Home" Tag="HomeView"  Icon="Home"/>
-                <NavigationViewItem Content="Basic Tools" Tag="BasicToolsView"  Icon="Globe"/>
+                <NavigationViewItem Content="Basic Tools" Tag="BasicToolsView"  Icon="Emoji2"/>
+                <NavigationViewItem Content="Net Tools" Tag="NetToolsView"  Icon="Globe"/>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame" NavigationFailed="ContentFrame_NavigationFailed"/>
         </NavigationView>

@@ -1,0 +1,146 @@
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Page
+    x:Class="Windows_Cleanup_WinUI_3.Views.NetToolsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_Cleanup_WinUI_3.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    <!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel x:ConnectionId='2' x:Name="ExpanderStack" Padding="30,25,30,0" Grid.Row="0">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <TextBlock Text="Disable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
+                            <Button x:ConnectionId='11' x:Name="btnDisableNet" Content="Disable" HorizontalAlignment="Right" FontSize="14px" Width="80"                            />
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Use this button to disable the internet, in other words 
+                            disconnect the computer from the internet.<LineBreak/>
+                            Note: Do not use this button if Downloading Task is running in background
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='3' x:Name="ExpanderStack1" Padding="30,10,30,0" Grid.Row="1">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <TextBlock Text="Flush DNS" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
+                            <Button x:ConnectionId='10' x:Name="btnFlushDNS" Content="Flush" HorizontalAlignment="Right" FontSize="14px" Width="80"                          />
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Use this button to flush the DNS cache, 
+                            it gives the advantage to PC gamers having very high PING issue. <LineBreak/>
+                            Note: Sometimes downloading speed may fluctuate after flushing.
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='4' x:Name="ExpanderStack2" Padding="30,10,30,0" Grid.Row="2">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <TextBlock Text="IP Reset" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
+                            <Button x:ConnectionId='9' x:Name="btnResetIP" Content="Reset" HorizontalAlignment="Right" FontSize="14px" Width="80"                         />
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Use this button to reset IP addresses, it gives the advantage to
+                            PC gamers having very high PING issue, packetlosses etc. <LineBreak/>
+                            Note: Restart your computer after resetting, but not necessary.
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='5' x:Name="ExpanderStack3" Padding="30,10,30,0" Grid.Row="3">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <TextBlock Text="Enable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
+                            <Button x:ConnectionId='8' x:Name="btnEnableNet" Content="Enable" HorizontalAlignment="Right" FontSize="14px" Width="80"                           />
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            If you disabled the Net and want to re-enable the internet,
+                            use this button to Enable the Net again. <LineBreak/>
+                            Note: Only use this button if the Net is disabled.
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='6' x:Name="ExpanderStack4" Padding="30,10,30,0" Grid.Row="4">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <TextBlock Text="Packet Loss Tester" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
+                            <Button x:ConnectionId='7' x:Name="btnPacketLossTest" Content="Test Now" HorizontalAlignment="Right" FontSize="14px" Width="80"                                />
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Use this buton to test the packet loss by pinging.
+                            By default it ping's google.com.<LineBreak/>
+                            Note: Do not use this button while downloading task is running in background, results in false packet loss.
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>
+

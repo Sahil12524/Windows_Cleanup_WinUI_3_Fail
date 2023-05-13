@@ -35,7 +35,16 @@
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Home" Tag="HomeView"  Icon="Home"/>
                 <NavigationViewItem Content="Basic Tools" Tag="BasicToolsView"  Icon="Emoji2"/>
-                <NavigationViewItem Content="Net Tools" Tag="NetToolsView"  Icon="Globe"/>
+                <NavigationViewItem Content="Net Tools" Tag="NetToolsView">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEE77;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem Content="Power Options" Tag="PowerOptionsView">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE7E8;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
             <Frame x:ConnectionId='4' x:Name="ContentFrame"                                                 />
         </NavigationView>

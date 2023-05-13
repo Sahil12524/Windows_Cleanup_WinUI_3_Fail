@@ -18,6 +18,7 @@
     <None Remove="Views\BasicToolsView.xaml" />
     <None Remove="Views\HomeView.xaml" />
     <None Remove="Views\NetToolsView.xaml" />
+    <None Remove="Views\PowerOptionsView.xaml" />
     <None Remove="Views\SettingsView.xaml" />
   </ItemGroup>
 
@@ -44,6 +45,11 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\PowerOptionsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\NetToolsView.xaml">

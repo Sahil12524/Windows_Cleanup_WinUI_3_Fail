@@ -224,5 +224,10 @@ namespace Windows_Cleanup_WinUI_3
                 }
             }
         }
+
+        private void ContentFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            GC.Collect();
+        }
     }
 }

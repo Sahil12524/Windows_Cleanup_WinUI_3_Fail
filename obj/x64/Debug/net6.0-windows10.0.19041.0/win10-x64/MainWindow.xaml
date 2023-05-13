@@ -46,7 +46,7 @@
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
             </NavigationView.MenuItems>
-            <Frame x:ConnectionId='4' x:Name="ContentFrame"                                                 />
+            <Frame x:ConnectionId='4' x:Name="ContentFrame"                                                                                    />
         </NavigationView>
     </Grid>
 </Window>

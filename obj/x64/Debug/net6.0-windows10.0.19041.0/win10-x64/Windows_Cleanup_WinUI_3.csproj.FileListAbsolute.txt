@@ -1,4 +1,3 @@
-E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.exe
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Scripts\BasicTools\CheckDiskError.bat
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Scripts\BasicTools\cleanscript.bat
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Scripts\BasicTools\SSDOPTIMIZE.bat
@@ -12,6 +11,7 @@ E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Scripts\PowerOptions\cmd_logoff.bat
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Scripts\PowerOptions\cmd_restart.bat
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Scripts\PowerOptions\cmd_shutdown.bat
+E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.exe
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\App.xbf
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\MainWindow.xbf
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\BasicToolsView.xbf

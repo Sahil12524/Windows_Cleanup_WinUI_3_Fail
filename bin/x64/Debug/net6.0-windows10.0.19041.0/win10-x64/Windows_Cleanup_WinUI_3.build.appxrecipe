@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>64c9905c-ea21-4cf3-80d0-88d55e88f6f3</PackageIdentityName>
-    <PackageIdentityPublisher>CN=sahil</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Sahil Bhandari</PackageIdentityPublisher>
     <IntermediateOutputPath>E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

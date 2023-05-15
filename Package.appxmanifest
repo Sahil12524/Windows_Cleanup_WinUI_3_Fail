@@ -8,12 +8,12 @@
 
   <Identity
     Name="64c9905c-ea21-4cf3-80d0-88d55e88f6f3"
-    Publisher="CN=sahil"
+    Publisher="CN=Sahil Bhandari"
     Version="1.0.0.0" />
 
   <Properties>
     <DisplayName>Windows_Cleanup_WinUI_3</DisplayName>
-    <PublisherDisplayName>sahil</PublisherDisplayName>
+    <PublisherDisplayName>Sahil Bhandari</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -31,7 +31,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="Windows_Cleanup_WinUI_3"
+        DisplayName="Windows Cleanup"
         Description="Windows_Cleanup_WinUI_3"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"

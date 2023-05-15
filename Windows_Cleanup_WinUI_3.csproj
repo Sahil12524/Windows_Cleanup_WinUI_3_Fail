@@ -11,6 +11,8 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
 	<ApplicationManifest>app.manifest</ApplicationManifest>
+	<PackageCertificateThumbprint>CC8007C8603EEED4F866A714EACC9CDA8DC5F4D8</PackageCertificateThumbprint>
+	<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     
   </PropertyGroup>
   <ItemGroup>

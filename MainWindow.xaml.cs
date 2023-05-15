@@ -8,8 +8,6 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Navigation;
 using System;
-using System.Diagnostics;
-using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices; // For DllImport
 using Windows_Cleanup_WinUI_3.Views;
@@ -191,7 +189,7 @@ namespace Windows_Cleanup_WinUI_3
         }
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
-        { 
+        {
             if (args.IsSettingsSelected)
             {
                 ContentFrame.Navigate(typeof(SettingsView));

@@ -1275,10 +1275,6 @@
             "version": "[6.0.16, 6.0.16]"
           },
           {
-            "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
             "name": "Microsoft.NETCore.App.Runtime.win-arm64",
             "version": "[6.0.16, 6.0.16]"
           },
@@ -1315,7 +1311,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -16,9 +16,10 @@
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
-    <WindowsSdkPath>D:\Windows Kits\10\</WindowsSdkPath>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
     <LayoutDir>E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>86B869EE87C3C4826B60A3F7964659F5C77CEA7C7E473435D21CE9A38DBB8455</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>299036BAEB86FA3DB94F695AC2EA9762AAE05BA0A3513F91A6ED226EDE5BF930</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>64c9905c-ea21-4cf3-80d0-88d55e88f6f3_1.0.0.0_x64__7tvynnn6hjecg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>64c9905c-ea21-4cf3-80d0-88d55e88f6f3_7tvynnn6hjecg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>64c9905c-ea21-4cf3-80d0-88d55e88f6f3</RegisteredPackageID>
@@ -29,21 +30,21 @@
     <AppXManifest Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-16T15:07:08.410</Modified>
+      <Modified>2023-05-19T15:57:38.189</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-16T15:07:08.194</Modified>
+      <Modified>2023-05-19T15:57:37.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.runtimeconfig.json">
       <PackagePath>Windows_Cleanup_WinUI_3.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-16T15:07:08.106</Modified>
+      <Modified>2023-05-19T15:57:37.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.dll">
       <PackagePath>Windows_Cleanup_WinUI_3.dll</PackagePath>
-      <Modified>2023-05-16T15:07:07.721</Modified>
+      <Modified>2023-05-19T15:57:37.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\BasicTools\CheckDiskError.bat">
       <PackagePath>Scripts\BasicTools\CheckDiskError.bat</PackagePath>
@@ -99,11 +100,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Windows_Cleanup_WinUI_3.exe</PackagePath>
-      <Modified>2023-05-16T15:07:07.814</Modified>
+      <Modified>2023-05-19T15:57:37.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.deps.json">
       <PackagePath>Windows_Cleanup_WinUI_3.deps.json</PackagePath>
-      <Modified>2023-05-16T15:07:08.102</Modified>
+      <Modified>2023-05-19T15:57:37.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sahil\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.16\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

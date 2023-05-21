@@ -67,9 +67,26 @@ namespace Windows_Cleanup_WinUI_3.Views
             cmdExec(@"Scripts\\PowerOptions\\cmd_abortpowertask.bat");
         }
 
-        private void btnLogOff_Click(object sender, RoutedEventArgs e)
+        private async void btnLogOff_Click(object sender, RoutedEventArgs e)
         {
-            cmdExec(@"Scripts\\PowerOptions\\cmd_logoff.bat");
+            ContentDialog dialog = new ContentDialog
+            {
+                Title = "Quick Restart",
+                Content = "The quick restart button will logoff your computer, and it can't be canceled. Do you want to continue?",
+                PrimaryButtonText = "Yes",
+                CloseButtonText = "No"
+            };
+            dialog.XamlRoot = btnLogOff.XamlRoot;
+            ContentDialogResult result = await dialog.ShowAsync();
+            if (result == ContentDialogResult.Primary)
+            {
+                cmdExec(@"Scripts\\PowerOptions\\cmd_logoff.bat");
+            }
+            else
+            {
+                return;
+            }
+
         }
     }
 }

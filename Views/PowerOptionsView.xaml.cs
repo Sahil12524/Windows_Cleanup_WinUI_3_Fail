@@ -77,6 +77,7 @@ namespace Windows_Cleanup_WinUI_3.Views
                 CloseButtonText = "No"
             };
             dialog.XamlRoot = btnLogOff.XamlRoot;
+            dialog.DefaultButton = ContentDialogButton.Close;
             ContentDialogResult result = await dialog.ShowAsync();
             if (result == ContentDialogResult.Primary)
             {

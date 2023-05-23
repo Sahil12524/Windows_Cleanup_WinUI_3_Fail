@@ -29,8 +29,8 @@
         </Grid>
 
         <NavigationView x:ConnectionId='3' Grid.Row="1"
-                        IsBackButtonVisible="Auto"
-                        IsSettingsVisible="True"
+                        IsBackButtonVisible="Collapsed"
+                        IsSettingsVisible="False"
                         x:Name="NavView"                                                                                                      >
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Home" Tag="HomeView"  Icon="Home"/>

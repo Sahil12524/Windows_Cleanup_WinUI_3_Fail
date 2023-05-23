@@ -25,6 +25,7 @@
   <ItemGroup>
     <None Remove="Assets\cleaning broom.ico" />
     <None Remove="Assets\cleaning_broom32x32.png" />
+    <None Remove="Views\AdvancedToolsView.xaml" />
     <None Remove="Views\BasicToolsView.xaml" />
     <None Remove="Views\HomeView.xaml" />
     <None Remove="Views\NetToolsView.xaml" />
@@ -95,6 +96,9 @@
     <None Update="Scripts\PowerOptions\cmd_shutdown.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Page Update="Views\AdvancedToolsView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\PowerOptionsView.xaml">

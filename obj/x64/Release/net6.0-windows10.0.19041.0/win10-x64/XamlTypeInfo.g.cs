@@ -224,7 +224,7 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[42];
+            _typeNameTable = new string[43];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -260,15 +260,16 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
             _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.Expander";
             _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.ExpandDirection";
             _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings";
-            _typeNameTable[35] = "Windows_Cleanup_WinUI_3.Views.BasicToolsView";
+            _typeNameTable[35] = "Windows_Cleanup_WinUI_3.Views.AdvancedToolsView";
             _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[38] = "Windows_Cleanup_WinUI_3.Views.HomeView";
-            _typeNameTable[39] = "Windows_Cleanup_WinUI_3.Views.NetToolsView";
-            _typeNameTable[40] = "Windows_Cleanup_WinUI_3.Views.PowerOptionsView";
-            _typeNameTable[41] = "Windows_Cleanup_WinUI_3.Views.SettingsView";
+            _typeNameTable[38] = "Windows_Cleanup_WinUI_3.Views.BasicToolsView";
+            _typeNameTable[39] = "Windows_Cleanup_WinUI_3.Views.HomeView";
+            _typeNameTable[40] = "Windows_Cleanup_WinUI_3.Views.NetToolsView";
+            _typeNameTable[41] = "Windows_Cleanup_WinUI_3.Views.PowerOptionsView";
+            _typeNameTable[42] = "Windows_Cleanup_WinUI_3.Views.SettingsView";
 
-            _typeTable = new global::System.Type[42];
+            _typeTable = new global::System.Type[43];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -304,13 +305,14 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
             _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.Expander);
             _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.ExpandDirection);
             _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings);
-            _typeTable[35] = typeof(global::Windows_Cleanup_WinUI_3.Views.BasicToolsView);
+            _typeTable[35] = typeof(global::Windows_Cleanup_WinUI_3.Views.AdvancedToolsView);
             _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[38] = typeof(global::Windows_Cleanup_WinUI_3.Views.HomeView);
-            _typeTable[39] = typeof(global::Windows_Cleanup_WinUI_3.Views.NetToolsView);
-            _typeTable[40] = typeof(global::Windows_Cleanup_WinUI_3.Views.PowerOptionsView);
-            _typeTable[41] = typeof(global::Windows_Cleanup_WinUI_3.Views.SettingsView);
+            _typeTable[38] = typeof(global::Windows_Cleanup_WinUI_3.Views.BasicToolsView);
+            _typeTable[39] = typeof(global::Windows_Cleanup_WinUI_3.Views.HomeView);
+            _typeTable[40] = typeof(global::Windows_Cleanup_WinUI_3.Views.NetToolsView);
+            _typeTable[41] = typeof(global::Windows_Cleanup_WinUI_3.Views.PowerOptionsView);
+            _typeTable[42] = typeof(global::Windows_Cleanup_WinUI_3.Views.SettingsView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -352,11 +354,12 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
         private object Activate_28_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
         private object Activate_30_MainWindow() { return new global::Windows_Cleanup_WinUI_3.MainWindow(); }
         private object Activate_32_Expander() { return new global::Microsoft.UI.Xaml.Controls.Expander(); }
-        private object Activate_35_BasicToolsView() { return new global::Windows_Cleanup_WinUI_3.Views.BasicToolsView(); }
-        private object Activate_38_HomeView() { return new global::Windows_Cleanup_WinUI_3.Views.HomeView(); }
-        private object Activate_39_NetToolsView() { return new global::Windows_Cleanup_WinUI_3.Views.NetToolsView(); }
-        private object Activate_40_PowerOptionsView() { return new global::Windows_Cleanup_WinUI_3.Views.PowerOptionsView(); }
-        private object Activate_41_SettingsView() { return new global::Windows_Cleanup_WinUI_3.Views.SettingsView(); }
+        private object Activate_35_AdvancedToolsView() { return new global::Windows_Cleanup_WinUI_3.Views.AdvancedToolsView(); }
+        private object Activate_38_BasicToolsView() { return new global::Windows_Cleanup_WinUI_3.Views.BasicToolsView(); }
+        private object Activate_39_HomeView() { return new global::Windows_Cleanup_WinUI_3.Views.HomeView(); }
+        private object Activate_40_NetToolsView() { return new global::Windows_Cleanup_WinUI_3.Views.NetToolsView(); }
+        private object Activate_41_PowerOptionsView() { return new global::Windows_Cleanup_WinUI_3.Views.PowerOptionsView(); }
+        private object Activate_42_SettingsView() { return new global::Windows_Cleanup_WinUI_3.Views.SettingsView(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -626,9 +629,9 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 35:   //  Windows_Cleanup_WinUI_3.Views.BasicToolsView
+            case 35:   //  Windows_Cleanup_WinUI_3.Views.AdvancedToolsView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_35_BasicToolsView;
+                userType.Activator = Activate_35_AdvancedToolsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -641,30 +644,37 @@ namespace Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo
                 xamlType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Windows_Cleanup_WinUI_3.Views.HomeView
+            case 38:   //  Windows_Cleanup_WinUI_3.Views.BasicToolsView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_38_HomeView;
+                userType.Activator = Activate_38_BasicToolsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 39:   //  Windows_Cleanup_WinUI_3.Views.NetToolsView
+            case 39:   //  Windows_Cleanup_WinUI_3.Views.HomeView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_39_NetToolsView;
+                userType.Activator = Activate_39_HomeView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 40:   //  Windows_Cleanup_WinUI_3.Views.PowerOptionsView
+            case 40:   //  Windows_Cleanup_WinUI_3.Views.NetToolsView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_40_PowerOptionsView;
+                userType.Activator = Activate_40_NetToolsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 41:   //  Windows_Cleanup_WinUI_3.Views.SettingsView
+            case 41:   //  Windows_Cleanup_WinUI_3.Views.PowerOptionsView
                 userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_41_SettingsView;
+                userType.Activator = Activate_41_PowerOptionsView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 42:   //  Windows_Cleanup_WinUI_3.Views.SettingsView
+                userType = new global::Windows_Cleanup_WinUI_3.Windows_Cleanup_WinUI_3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_42_SettingsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

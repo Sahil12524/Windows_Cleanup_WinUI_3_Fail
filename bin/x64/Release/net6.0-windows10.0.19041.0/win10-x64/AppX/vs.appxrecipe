@@ -16,8 +16,7 @@
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
-    <WindowsSdkPath>
-    </WindowsSdkPath>
+    <WindowsSdkPath>D:\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>299036BAEB86FA3DB94F695AC2EA9762AAE05BA0A3513F91A6ED226EDE5BF930</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>64c9905c-ea21-4cf3-80d0-88d55e88f6f3_1.0.0.0_x64__7tvynnn6hjecg</RegisteredPackageMoniker>
@@ -30,17 +29,17 @@
     <AppXManifest Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-05-21T10:13:16.193</Modified>
+      <Modified>2023-05-23T11:20:34.283</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-05-21T10:13:15.106</Modified>
+      <Modified>2023-05-23T11:20:33.548</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.runtimeconfig.json">
       <PackagePath>Windows_Cleanup_WinUI_3.runtimeconfig.json</PackagePath>
-      <Modified>2023-05-21T10:13:14.766</Modified>
+      <Modified>2023-05-23T11:20:33.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\BasicTools\CheckDiskError.bat">
       <PackagePath>Scripts\BasicTools\CheckDiskError.bat</PackagePath>
@@ -96,11 +95,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Windows_Cleanup_WinUI_3.exe</PackagePath>
-      <Modified>2023-05-21T10:13:14.161</Modified>
+      <Modified>2023-05-23T11:20:32.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.deps.json">
       <PackagePath>Windows_Cleanup_WinUI_3.deps.json</PackagePath>
-      <Modified>2023-05-21T10:13:14.668</Modified>
+      <Modified>2023-05-23T11:20:33.290</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sahil\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.16\runtimes\win-x64\native\Microsoft.DiaSymReader.Native.amd64.dll">
       <PackagePath>Microsoft.DiaSymReader.Native.amd64.dll</PackagePath>
@@ -996,75 +995,75 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:11.780</Modified>
+      <Modified>2023-05-23T11:05:04.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.WinUI.dll">
       <PackagePath>Microsoft.WinUI.dll</PackagePath>
-      <Modified>2023-05-19T15:56:16.211</Modified>
+      <Modified>2023-05-23T11:05:09.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.AppLifecycle.Projection.dll">
       <PackagePath>Microsoft.Windows.AppLifecycle.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:16.589</Modified>
+      <Modified>2023-05-23T11:05:09.606</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.AppNotifications.Builder.Projection.dll">
       <PackagePath>Microsoft.Windows.AppNotifications.Builder.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:16.931</Modified>
+      <Modified>2023-05-23T11:05:09.939</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.AppNotifications.Projection.dll">
       <PackagePath>Microsoft.Windows.AppNotifications.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:17.266</Modified>
+      <Modified>2023-05-23T11:05:10.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll">
       <PackagePath>Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:17.608</Modified>
+      <Modified>2023-05-23T11:05:10.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.ApplicationModel.Resources.Projection.dll">
       <PackagePath>Microsoft.Windows.ApplicationModel.Resources.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:17.964</Modified>
+      <Modified>2023-05-23T11:05:10.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
       <PackagePath>Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:18.265</Modified>
+      <Modified>2023-05-23T11:05:11.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.PushNotifications.Projection.dll">
       <PackagePath>Microsoft.Windows.PushNotifications.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:18.609</Modified>
+      <Modified>2023-05-23T11:05:11.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.Security.AccessControl.Projection.dll">
       <PackagePath>Microsoft.Windows.Security.AccessControl.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:18.910</Modified>
+      <Modified>2023-05-23T11:05:12.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.System.Power.Projection.dll">
       <PackagePath>Microsoft.Windows.System.Power.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:19.209</Modified>
+      <Modified>2023-05-23T11:05:12.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.System.Projection.dll">
       <PackagePath>Microsoft.Windows.System.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:19.503</Modified>
+      <Modified>2023-05-23T11:05:12.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.Widgets.Projection.dll">
       <PackagePath>Microsoft.Windows.Widgets.Projection.dll</PackagePath>
-      <Modified>2023-05-19T15:56:19.814</Modified>
+      <Modified>2023-05-23T11:05:13.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
-      <Modified>2023-05-19T15:56:20.078</Modified>
+      <Modified>2023-05-23T11:05:13.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.WindowsAppRuntime.Release.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Release.Net.dll</PackagePath>
-      <Modified>2023-05-19T15:56:20.336</Modified>
+      <Modified>2023-05-23T11:05:13.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Windows_Cleanup_WinUI_3.dll">
       <PackagePath>Windows_Cleanup_WinUI_3.dll</PackagePath>
-      <Modified>2023-05-21T10:13:16.007</Modified>
+      <Modified>2023-05-23T11:20:34.165</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
-      <Modified>2023-05-19T15:56:33.994</Modified>
+      <Modified>2023-05-23T11:05:28.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
-      <Modified>2023-05-19T15:56:34.848</Modified>
+      <Modified>2023-05-23T11:05:29.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Assets\cleaning broom.ico">
       <PackagePath>Assets\cleaning broom.ico</PackagePath>

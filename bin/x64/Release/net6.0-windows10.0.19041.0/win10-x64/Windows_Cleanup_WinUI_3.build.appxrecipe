@@ -15,7 +15,7 @@
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
-    <WindowsSdkPath></WindowsSdkPath>
+    <WindowsSdkPath>D:\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>

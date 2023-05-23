@@ -32,6 +32,9 @@
     <None Update="Package.appxmanifest">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Views\AdvancedToolsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\PowerOptionsView.xaml">
       <SubType>Designer</SubType>
     </Page>

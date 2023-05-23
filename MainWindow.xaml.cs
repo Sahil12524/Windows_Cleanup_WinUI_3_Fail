@@ -216,6 +216,10 @@ namespace Windows_Cleanup_WinUI_3
                         ContentFrame.Navigate(typeof(PowerOptionsView));
                         NavView.Header = "Power Options";
                         break;
+                    case "AdvancedToolsView":
+                        ContentFrame.Navigate(typeof(AdvancedToolsView));
+                        NavView.Header = "Advanced Tools";
+                        break;
 
                     default:
                         break;

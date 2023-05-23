@@ -45,6 +45,11 @@
                         <FontIcon Glyph="&#xE7E8;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem Content="Advanced Tools" Tag="AdvancedToolsView">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE7EF;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame" NavigationFailed="ContentFrame_NavigationFailed" Navigated="ContentFrame_Navigated"/>
         </NavigationView>

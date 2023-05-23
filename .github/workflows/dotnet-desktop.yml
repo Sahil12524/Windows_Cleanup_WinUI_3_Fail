@@ -58,7 +58,7 @@ jobs:
     env:
       Solution_Name: Windows_Cleanup_WinUI_3.sln                        # Replace with your solution name, i.e. MyWpfApp.sln.
       Test_Project_Path: Windows_Cleanup_WinUI_3\Windows_Cleanup_WinUI_3.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Wap_Project_Directory: Windows_Cleanup_WinUI_3\Package.appxmanifest    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Directory: Windows_Cleanup_WinUI_3\    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
       Wap_Project_Path: your-wap-project-path                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
@@ -105,7 +105,7 @@ jobs:
 
     # Remove the pfx
     - name: Remove the pfx
-      run: Remove-Item -path $env:Wap_Project_Directory\GitHubActionsWorkflow.pfx
+      run: Remove-Item -path $env:Wap_Project_Directory\Windows_Cleanup_WinUI_3_TemporaryKey.pfx
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifacts

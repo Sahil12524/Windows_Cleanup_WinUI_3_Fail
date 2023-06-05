@@ -22,6 +22,7 @@
 	<AppxBundle>Auto</AppxBundle>
 	<AppxBundlePlatforms>x64</AppxBundlePlatforms>
 	<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+	<DefaultLanguage>en</DefaultLanguage>
     
   </PropertyGroup>
   <ItemGroup>

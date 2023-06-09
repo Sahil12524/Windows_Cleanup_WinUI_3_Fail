@@ -12,6 +12,11 @@ This is Windows Cleanup app build on WinUI 3 in C# language. This software is fo
 ![GitHub all releases](https://img.shields.io/github/downloads/Sahil12524/Windows_Cleanup_WinUI_3/total?style=for-the-badge)
 
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Sahil12524/Windows_Cleanup_WinUI_3.svg)](https://starchart.cc/Sahil12524/Windows_Cleanup_WinUI_3)
+
+
 ## Features
 
 - Every tools are 1 click away

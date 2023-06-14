@@ -261,7 +261,6 @@ E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\hostfxr.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\hostpolicy.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore.dll
-E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1623.17311.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordbi.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\mscorrc.dll
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\msquic.dll
@@ -329,3 +328,4 @@ E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1823.26907.dll

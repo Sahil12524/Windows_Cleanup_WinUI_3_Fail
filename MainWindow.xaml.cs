@@ -1,15 +1,16 @@
 // Copyright (c) Microsoft Corporation and Contributors.
 // Licensed under the MIT License.
 
+using System;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.InteropServices; // For DllImport
 using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Navigation;
-using System;
-using System.Reflection;
-using System.Runtime.InteropServices; // For DllImport
 using Windows_Cleanup_WinUI_3.Views;
 using WinRT; // required to support Window.As<ICompositionSupportsSystemBackdrop>()
 
@@ -32,6 +33,8 @@ namespace Windows_Cleanup_WinUI_3
         public MainWindow()
         {
             this.InitializeComponent();
+            var exists = System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1;
+            if (System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1) System.Diagnostics.Process.GetCurrentProcess().Kill();
             ExtendsContentIntoTitleBar = true;
             SetTitleBar(AppTitleBar);
             Activated += MainWindow_Activated;

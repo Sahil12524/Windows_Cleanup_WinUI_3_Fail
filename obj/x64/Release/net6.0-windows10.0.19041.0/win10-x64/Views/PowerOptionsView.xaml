@@ -29,7 +29,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Shutdown" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='9' x:Name="btnShutdown" Content="Shutdown" HorizontalAlignment="Right" FontSize="14px" Width="90"                          />
                         </Grid>
@@ -42,7 +42,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:ConnectionId='3' x:Name="ExpanderStack1" Padding="30,10,30,0" Grid.Row="1">
+            <StackPanel x:ConnectionId='3' x:Name="ExpanderStack1" Padding="30,3,30,0" Grid.Row="1">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -51,7 +51,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='8' x:Name="btnRestart" Content="Restart" HorizontalAlignment="Right" FontSize="14px" Width="80"                         />
                         </Grid>
@@ -64,7 +64,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:ConnectionId='4' x:Name="ExpanderStack2" Padding="30,10,30,0" Grid.Row="2">
+            <StackPanel x:ConnectionId='4' x:Name="ExpanderStack2" Padding="30,3,30,0" Grid.Row="2">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -73,7 +73,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Abort Shutdown or Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='7' x:Name="btnAbortSR" Content="Abort" HorizontalAlignment="Right" FontSize="14px" Width="80"                         />
                         </Grid>
@@ -88,7 +88,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:ConnectionId='5' x:Name="ExpanderStack3" Padding="30,10,30,0" Grid.Row="3">
+            <StackPanel x:ConnectionId='5' x:Name="ExpanderStack3" Padding="30,3,30,0" Grid.Row="3">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -97,7 +97,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Log Off (Quick Restart)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='6' x:Name="btnLogOff" Content="Quick Restart" HorizontalAlignment="Right" FontSize="14px" Width="110"                        />
                         </Grid>

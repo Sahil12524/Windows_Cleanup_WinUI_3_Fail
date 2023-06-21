@@ -29,7 +29,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Temp files remove" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:Name="btnTempFilesRemove" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnTempFilesRemove_Click"/>
                         </Grid>
@@ -44,7 +44,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack1" Padding="30,10,30,0" Grid.Row="1">
+            <StackPanel x:Name="ExpanderStack1" Padding="30,3,30,0" Grid.Row="1">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -53,7 +53,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Windows Update Cache Remove" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:Name="btnWindowsUpdateCacheClean" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnWindowsUpdateCacheClean_Click"/>
                         </Grid>
@@ -68,7 +68,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack2" Padding="30,10,30,0" Grid.Row="2">
+            <StackPanel x:Name="ExpanderStack2" Padding="30,3,30,0" Grid.Row="2">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -77,7 +77,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Check Disk Errors (C Drive Only)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:Name="btnCHKDSK" Content="Check" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnCHKDSK_Click"/>
                         </Grid>
@@ -92,7 +92,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack3" Padding="30,10,30,0" Grid.Row="3">
+            <StackPanel x:Name="ExpanderStack3" Padding="30,3,30,0" Grid.Row="3">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -101,7 +101,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="SSD Trim (C Drive Only)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:Name="btnSSDTrim" Content="Trim" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnSSDTrim_Click"/>
                         </Grid>

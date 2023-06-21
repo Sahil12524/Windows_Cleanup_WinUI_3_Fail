@@ -30,7 +30,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Disable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='11' x:Name="btnDisableNet" Content="Disable" HorizontalAlignment="Right" FontSize="14px" Width="80"                            />
                         </Grid>
@@ -45,7 +45,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:ConnectionId='3' x:Name="ExpanderStack1" Padding="30,10,30,0" Grid.Row="1">
+            <StackPanel x:ConnectionId='3' x:Name="ExpanderStack1" Padding="30,3,30,0" Grid.Row="1">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -54,7 +54,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Flush DNS" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='10' x:Name="btnFlushDNS" Content="Flush" HorizontalAlignment="Right" FontSize="14px" Width="80"                          />
                         </Grid>
@@ -69,7 +69,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:ConnectionId='4' x:Name="ExpanderStack2" Padding="30,10,30,0" Grid.Row="2">
+            <StackPanel x:ConnectionId='4' x:Name="ExpanderStack2" Padding="30,3,30,0" Grid.Row="2">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -78,7 +78,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="IP Reset" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='9' x:Name="btnResetIP" Content="Reset" HorizontalAlignment="Right" FontSize="14px" Width="80"                         />
                         </Grid>
@@ -93,7 +93,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:ConnectionId='5' x:Name="ExpanderStack3" Padding="30,10,30,0" Grid.Row="3">
+            <StackPanel x:ConnectionId='5' x:Name="ExpanderStack3" Padding="30,3,30,0" Grid.Row="3">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -102,7 +102,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Enable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='8' x:Name="btnEnableNet" Content="Enable" HorizontalAlignment="Right" FontSize="14px" Width="80"                           />
                         </Grid>
@@ -117,7 +117,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:ConnectionId='6' x:Name="ExpanderStack4" Padding="30,10,30,0" Grid.Row="4">
+            <StackPanel x:ConnectionId='6' x:Name="ExpanderStack4" Padding="30,3,30,0" Grid.Row="4">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -126,7 +126,7 @@
                 </StackPanel.Resources>
                 <Expander>
                     <Expander.Header>
-                        <Grid>
+                        <Grid Height="68px">
                             <TextBlock Text="Packet Loss Tester" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
                             <Button x:ConnectionId='7' x:Name="btnPacketLossTest" Content="Test Now" HorizontalAlignment="Right" FontSize="14px" Width="80"                                />
                         </Grid>

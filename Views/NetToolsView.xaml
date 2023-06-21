@@ -31,8 +31,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Disable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnDisableNet" Content="Disable" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDisableNet_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Disable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnDisableNet" Content="Disable" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDisableNet_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -55,8 +59,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Flush DNS" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnFlushDNS" Content="Flush" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnFlushDNS_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Flush DNS" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnFlushDNS" Content="Flush" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnFlushDNS_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -79,8 +87,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="IP Reset" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnResetIP" Content="Reset" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnResetIP_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="IP Reset" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnResetIP" Content="Reset" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnResetIP_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -103,8 +115,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Enable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnEnableNet" Content="Enable" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnEnableNet_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Enable Net" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnEnableNet" Content="Enable" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnEnableNet_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -127,8 +143,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Packet Loss Tester" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnPacketLossTest" Content="Test Now" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnPacketLossTest_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Packet Loss Tester" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnPacketLossTest" Content="Test Now" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnPacketLossTest_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">

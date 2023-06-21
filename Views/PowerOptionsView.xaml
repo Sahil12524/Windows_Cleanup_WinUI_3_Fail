@@ -30,8 +30,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Shutdown" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnShutdown" Content="Shutdown" HorizontalAlignment="Right" FontSize="14px" Width="90" Click="btnShutdown_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Shutdown" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnShutdown" Content="Shutdown" HorizontalAlignment="Right" FontSize="14px" Width="90" Click="btnShutdown_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -52,8 +56,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnRestart" Content="Restart" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnRestart_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnRestart" Content="Restart" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnRestart_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -74,8 +82,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Abort Shutdown or Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnAbortSR" Content="Abort" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnAbortSR_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Abort Shutdown or Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnAbortSR" Content="Abort" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnAbortSR_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -98,8 +110,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Log Off (Quick Restart)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnLogOff" Content="Quick Restart" HorizontalAlignment="Right" FontSize="14px" Width="110" Click="btnLogOff_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Log Off (Quick Restart)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnLogOff" Content="Quick Restart" HorizontalAlignment="Right" FontSize="14px" Width="110" Click="btnLogOff_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">

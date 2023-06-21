@@ -28,8 +28,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="SFC Scan" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnSFCScan" Content="Scan" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnSFCScan_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="SFC Scan" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnSFCScan" Content="Scan" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnSFCScan_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -54,8 +58,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="DISM Restore Health" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnDISMRestore" Content="Restore Health" HorizontalAlignment="Right" FontSize="14px" Width="115" Click="btnDISMRestore_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="DISM Restore Health" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnDISMRestore" Content="Restore Health" HorizontalAlignment="Right" FontSize="14px" Width="115" Click="btnDISMRestore_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -78,8 +86,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Disk Cleanup" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnDiskCleanup" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDiskCleanup_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Disk Cleanup" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnDiskCleanup" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDiskCleanup_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -101,8 +113,12 @@
                 <Expander>
                     <Expander.Header>
                         <Grid Height="68px">
-                            <TextBlock Text="Disk Defragment" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button x:Name="btnDiskDefragment" Content="Defrag" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDiskDefragment_Click"/>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Disk Defragment" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnDiskDefragment" Content="Defrag" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDiskDefragment_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">

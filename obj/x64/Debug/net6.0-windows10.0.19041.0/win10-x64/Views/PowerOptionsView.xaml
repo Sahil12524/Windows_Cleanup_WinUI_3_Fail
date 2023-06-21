@@ -1,4 +1,4 @@
-<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
 <!-- Licensed under the MIT License. -->
 
 <Page
@@ -14,8 +14,8 @@
 
     <ScrollViewer>
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="WindowStates">
-                <VisualState x:Name="WideState">
+            <VisualStateGroup x:ConnectionId='2' x:Name="WindowStates">
+                <VisualState x:ConnectionId='3' x:Name="WideState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="1370"/>
                     </VisualState.StateTriggers>
@@ -25,7 +25,7 @@
                     </VisualState.Setters>
                 </VisualState>
 
-                <VisualState x:Name="NarrowState">
+                <VisualState x:ConnectionId='4' x:Name="NarrowState">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
@@ -35,14 +35,14 @@
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
-        <Grid x:Name="MainGrid">
+        <Grid x:ConnectionId='5' x:Name="MainGrid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel x:Name="ExpanderStack" Padding="30,25,30,0" Grid.Row="0">
+            <StackPanel x:ConnectionId='6' x:Name="ExpanderStack" Padding="30,25,30,0" Grid.Row="0">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -57,7 +57,7 @@
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Shutdown" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
-                            <Button x:Name="btnShutdown" Content="Shutdown" HorizontalAlignment="Right" FontSize="14px" Width="90" Click="btnShutdown_Click" Grid.Column="1"/>
+                            <Button x:ConnectionId='13' x:Name="btnShutdown" Content="Shutdown" HorizontalAlignment="Right" FontSize="14px" Width="90"                           Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -68,7 +68,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack1" Padding="30,3,30,0" Grid.Row="1">
+            <StackPanel x:ConnectionId='7' x:Name="ExpanderStack1" Padding="30,3,30,0" Grid.Row="1">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -83,7 +83,7 @@
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
-                            <Button x:Name="btnRestart" Content="Restart" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnRestart_Click" Grid.Column="1"/>
+                            <Button x:ConnectionId='12' x:Name="btnRestart" Content="Restart" HorizontalAlignment="Right" FontSize="14px" Width="80"                          Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -94,7 +94,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack2" Padding="30,3,30,0" Grid.Row="2">
+            <StackPanel x:ConnectionId='8' x:Name="ExpanderStack2" Padding="30,3,30,0" Grid.Row="2">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -109,7 +109,7 @@
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Abort Shutdown or Restart" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
-                            <Button x:Name="btnAbortSR" Content="Abort" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnAbortSR_Click" Grid.Column="1"/>
+                            <Button x:ConnectionId='11' x:Name="btnAbortSR" Content="Abort" HorizontalAlignment="Right" FontSize="14px" Width="80"                          Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -122,7 +122,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack3" Padding="30,3,30,0" Grid.Row="3">
+            <StackPanel x:ConnectionId='9' x:Name="ExpanderStack3" Padding="30,3,30,0" Grid.Row="3">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -137,7 +137,7 @@
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <TextBlock Text="Log Off (Quick Restart)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
-                            <Button x:Name="btnLogOff" Content="Quick Restart" HorizontalAlignment="Right" FontSize="14px" Width="110" Click="btnLogOff_Click" Grid.Column="1"/>
+                            <Button x:ConnectionId='10' x:Name="btnLogOff" Content="Quick Restart" HorizontalAlignment="Right" FontSize="14px" Width="110"                         Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
@@ -153,3 +153,4 @@
         </Grid>
     </ScrollViewer>
 </Page>
+

@@ -29,17 +29,17 @@
     <AppXManifest Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-24T10:19:32.064</Modified>
+      <Modified>2023-06-26T07:09:48.933</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-06-24T10:19:31.425</Modified>
+      <Modified>2023-06-26T07:07:29.690</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.runtimeconfig.json">
       <PackagePath>Windows_Cleanup_WinUI_3.runtimeconfig.json</PackagePath>
-      <Modified>2023-06-24T10:19:31.381</Modified>
+      <Modified>2023-06-26T06:35:33.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\AdvancedTools\cmd_DISM.bat">
       <PackagePath>Scripts\AdvancedTools\cmd_DISM.bat</PackagePath>
@@ -103,11 +103,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Windows_Cleanup_WinUI_3.exe</PackagePath>
-      <Modified>2023-06-24T10:19:30.007</Modified>
+      <Modified>2023-06-26T07:09:48.258</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Release\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.deps.json">
       <PackagePath>Windows_Cleanup_WinUI_3.deps.json</PackagePath>
-      <Modified>2023-06-24T10:19:31.380</Modified>
+      <Modified>2023-06-26T06:35:33.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sahil\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.18\runtimes\win-x64\native\Microsoft.DiaSymReader.Native.amd64.dll">
       <PackagePath>Microsoft.DiaSymReader.Native.amd64.dll</PackagePath>
@@ -1063,7 +1063,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Windows_Cleanup_WinUI_3.dll">
       <PackagePath>Windows_Cleanup_WinUI_3.dll</PackagePath>
-      <Modified>2023-06-24T10:19:31.924</Modified>
+      <Modified>2023-06-26T07:09:48.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Release\net6.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

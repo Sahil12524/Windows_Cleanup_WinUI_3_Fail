@@ -39,26 +39,12 @@ namespace Windows_Cleanup_WinUI_3
         public MainWindow()
         {
             this.InitializeComponent();
+            var exists = System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1;
+            if (System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1) System.Diagnostics.Process.GetCurrentProcess().Kill();
             m_AppWindow = GetAppWindowForCurrentWindow();
             m_AppWindow.Changed += AppWindow_Changed;
-            bool isTallTitleBar = true;
-            // A taller title bar is only supported when drawing a fully custom title bar
-            if (AppWindowTitleBar.IsCustomizationSupported() && m_AppWindow.TitleBar.ExtendsContentIntoTitleBar)
-            {
-                if (isTallTitleBar)
-                {
-                    // Choose a tall title bar to provide more room for interactive elements 
-                    // like search box or person picture controls.
-                    m_AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
-                }
-                else
-                {
-                    //_mainAppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Standard;
-                }
-                // Recalculate the drag region for the custom title bar 
-                // if you explicitly defined new draggable areas.
-                SetDragRegionForCustomTitleBar(m_AppWindow);
-            }
+            Activated += MainWindow_Activated;
+            TrySetSystemBackdrop();
             if (AppWindowTitleBar.IsCustomizationSupported())
             {
                 var titleBar = m_AppWindow.TitleBar;
@@ -78,12 +64,8 @@ namespace Windows_Cleanup_WinUI_3
                 // Show alternative UI for any functionality in
                 // the title bar, such as search.
             }
-            var exists = System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1;
-            if (System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1) System.Diagnostics.Process.GetCurrentProcess().Kill();
             //ExtendsContentIntoTitleBar = true;
             //SetTitleBar(AppTitleBar);
-            Activated += MainWindow_Activated;
-            TrySetSystemBackdrop();
         }
 
         private AppWindow GetAppWindowForCurrentWindow()
@@ -131,8 +113,15 @@ namespace Windows_Cleanup_WinUI_3
                 && appWindow.TitleBar.ExtendsContentIntoTitleBar)
             {
                 var scaleAdjustment = GetScaleAdjustment();
+                try
+                {
+                    RightPaddingColumn.Width = new GridLength(appWindow.TitleBar.RightInset / scaleAdjustment);
+                }
+                catch (ArgumentException)
+                {
 
-                RightPaddingColumn.Width = new GridLength(appWindow.TitleBar.RightInset / scaleAdjustment);
+                }
+
                 LeftPaddingColumn.Width = new GridLength(appWindow.TitleBar.LeftInset / scaleAdjustment);
 
                 List<Windows.Graphics.RectInt32> dragRectsList = new();

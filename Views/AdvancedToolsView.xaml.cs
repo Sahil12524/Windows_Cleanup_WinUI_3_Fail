@@ -126,14 +126,14 @@ namespace Windows_Cleanup_WinUI_3.Views
 
         }
 
-        private async void btnDiskCleanup_Click(object sender, RoutedEventArgs e)
+        private void btnCHKDSK_Click(object sender, RoutedEventArgs e)
         {
-            await RunCmdCommandAsync("start cleanmgr");
+            cmdExec(@"Scripts\\AdvancedTools\\CheckDiskError.bat");
         }
 
-        private async void btnDiskDefragment_Click(object sender, RoutedEventArgs e)
+        private void btnSSDTrim_Click(object sender, RoutedEventArgs e)
         {
-            await RunCmdCommandAsync("start dfrgui");
+            cmdExec(@"Scripts\\AdvancedTools\\SSDOPTIMIZE.bat");
         }
     }
 }

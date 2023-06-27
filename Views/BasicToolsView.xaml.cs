@@ -4,6 +4,7 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
@@ -51,6 +52,38 @@ namespace Windows_Cleanup_WinUI_3.Views
             }
         }
 
+        private async Task RunCmdCommandAsync(string command)
+        {
+            using (Process process = new Process())
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
+
+                startInfo.FileName = "cmd.exe";
+                startInfo.Arguments = "/C " + command;
+                startInfo.RedirectStandardOutput = true;
+                startInfo.UseShellExecute = false;
+                startInfo.CreateNoWindow = true;
+
+                process.StartInfo = startInfo;
+
+                // Subscribe to the event when the CMD process writes to the output
+                process.OutputDataReceived += (sender, e) =>
+                {
+                    // Output the result (you can display it in a text box or use it as needed)
+                    Console.WriteLine(e.Data);
+                };
+
+                // Start the process
+                process.Start();
+
+                // Begin asynchronous reading of the output
+                process.BeginOutputReadLine();
+
+                // Wait asynchronously for the process to exit
+                await process.WaitForExitAsync();
+            }
+        }
+
         private void btnTempFilesRemove_Click(object sender, RoutedEventArgs e)
         {
             cmdExec(@"Scripts\\BasicTools\\cleanscript.bat");
@@ -61,14 +94,14 @@ namespace Windows_Cleanup_WinUI_3.Views
             cmdExec(@"Scripts\\BasicTools\\WindowsUpdateCacheRemove.bat");
         }
 
-        private void btnCHKDSK_Click(object sender, RoutedEventArgs e)
+        private async void btnDiskCleanup_Click(object sender, RoutedEventArgs e)
         {
-            cmdExec(@"Scripts\\BasicTools\\CheckDiskError.bat");
+            await RunCmdCommandAsync("start cleanmgr");
         }
 
-        private void btnSSDTrim_Click(object sender, RoutedEventArgs e)
+        private async void btnDiskDefragment_Click(object sender, RoutedEventArgs e)
         {
-            cmdExec(@"Scripts\\BasicTools\\SSDOPTIMIZE.bat");
+            await RunCmdCommandAsync("start dfrgui");
         }
     }
 }

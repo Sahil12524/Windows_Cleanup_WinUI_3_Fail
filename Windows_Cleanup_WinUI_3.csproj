@@ -73,13 +73,13 @@
     <None Update="Scripts\AdvancedTools\cmd_sfcscan.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Scripts\BasicTools\CheckDiskError.bat">
+    <None Update="Scripts\AdvancedTools\CheckDiskError.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Scripts\BasicTools\cleanscript.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Scripts\BasicTools\SSDOPTIMIZE.bat">
+    <None Update="Scripts\AdvancedTools\SSDOPTIMIZE.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Scripts\BasicTools\WindowsUpdateCacheRemove.bat">

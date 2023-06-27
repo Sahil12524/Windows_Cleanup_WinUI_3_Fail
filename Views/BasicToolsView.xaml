@@ -113,15 +113,14 @@
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="Check Disk Errors (C Drive Only)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
-                            <Button x:Name="btnCHKDSK" Content="Check" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnCHKDSK_Click" Grid.Column="1"/>
+                            <TextBlock Text="Disk Cleanup" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnDiskCleanup" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDiskCleanup_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
                         <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
-                            If your System is having problem, working slow, <LineBreak/>
-                            this button will try to detect errors and possibly fix them. <LineBreak/>
-                            Note: Only works after a full computer restart.
+                            Disk cleanup is a tool to cleanup junk in more advanced way. <LineBreak/>
+                            This tool can not clean temp and prefetch files, but this can delete Windows.old folder.
                         </TextBlock>
                     </StackPanel>
                 </Expander>
@@ -141,15 +140,17 @@
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="SSD Trim (C Drive Only)" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
-                            <Button x:Name="btnSSDTrim" Content="Trim" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnSSDTrim_Click" Grid.Column="1"/>
+                            <TextBlock Text="Disk Defragment" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:Name="btnDiskDefragment" Content="Defrag" HorizontalAlignment="Right" FontSize="14px" Width="80" Click="btnDiskDefragment_Click" Grid.Column="1"/>
                         </Grid>
                     </Expander.Header>
                     <StackPanel Orientation="Vertical">
                         <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
-                            Every SSD requires to trim once every 2 days to maintain <LineBreak/>
-                            the health and performance of the SSD. <LineBreak/>
-                            Note: Only SSD user should use this! Hard Disk Drive (HDD) users will not benefit.
+                            Disk Defragment is a tool that will defrag your HDD or Trime your SSD. <LineBreak/>
+                            Defraging the disk reduce loading times of apps, accessing files faster. <LineBreak/>
+                            Defraging the disk also makes the games stutter free. <LineBreak/>
+                            Note: Do not defrag the disk while playing games. Doing so will makes the games <LineBreak/>
+                            load slow and sometimes even stutter the games.
                         </TextBlock>
                     </StackPanel>
                 </Expander>

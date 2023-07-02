@@ -10,84 +10,83 @@ using Microsoft.UI.Xaml.Controls;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Windows_Cleanup_WinUI_3.Views
+namespace Windows_Cleanup_WinUI_3.Views;
+
+/// <summary>
+/// An empty page that can be used on its own or navigated to within a Frame.
+/// </summary>
+public sealed partial class PowerOptionsView : Page
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class PowerOptionsView : Page
+    public PowerOptionsView()
     {
-        public PowerOptionsView()
-        {
-            this.InitializeComponent();
-        }
+        this.InitializeComponent();
+    }
 
-        private void cmdExec(string? path)
+    private void cmdExec(string? path)
+    {
+        try
         {
-            try
+            // Get the installed location of the application package
+            string appFolderPath = Windows.ApplicationModel.Package.Current.InstalledLocation.Path;
+
+            // Specify the relative path to your .bat file inside the AppX folder
+            string relativeBatPath = path;
+
+            // Combine the app folder path and the relative bat path
+            string batFilePath = Path.Combine(appFolderPath, relativeBatPath);
+
+            ProcessStartInfo processStartInfo = new ProcessStartInfo
             {
-                // Get the installed location of the application package
-                string appFolderPath = Windows.ApplicationModel.Package.Current.InstalledLocation.Path;
-
-                // Specify the relative path to your .bat file inside the AppX folder
-                string relativeBatPath = path;
-
-                // Combine the app folder path and the relative bat path
-                string batFilePath = Path.Combine(appFolderPath, relativeBatPath);
-
-                ProcessStartInfo processStartInfo = new ProcessStartInfo
-                {
-                    FileName = batFilePath,
-                    WorkingDirectory = appFolderPath,
-                    UseShellExecute = true
-                };
-
-                Process.Start(processStartInfo);
-            }
-            catch (Exception ex)
-            {
-                // Handle any exceptions that occur during execution
-            }
-        }
-
-
-
-        private void btnShutdown_Click(object sender, RoutedEventArgs e)
-        {
-            cmdExec(@"Scripts\\PowerOptions\\cmd_shutdown.bat");
-        }
-
-        private void btnRestart_Click(object sender, RoutedEventArgs e)
-        {
-            cmdExec(@"Scripts\\PowerOptions\\cmd_restart.bat");
-        }
-
-        private void btnAbortSR_Click(object sender, RoutedEventArgs e)
-        {
-            cmdExec(@"Scripts\\PowerOptions\\cmd_abortpowertask.bat");
-        }
-
-        private async void btnLogOff_Click(object sender, RoutedEventArgs e)
-        {
-            ContentDialog dialog = new ContentDialog
-            {
-                Title = "Quick Restart",
-                Content = "The quick restart button will logoff your computer, and it can't be canceled. Do you want to continue?",
-                PrimaryButtonText = "Yes",
-                CloseButtonText = "No"
+                FileName = batFilePath,
+                WorkingDirectory = appFolderPath,
+                UseShellExecute = true
             };
-            dialog.XamlRoot = btnLogOff.XamlRoot;
-            dialog.DefaultButton = ContentDialogButton.Close;
-            ContentDialogResult result = await dialog.ShowAsync();
-            if (result == ContentDialogResult.Primary)
-            {
-                cmdExec(@"Scripts\\PowerOptions\\cmd_logoff.bat");
-            }
-            else
-            {
-                return;
-            }
 
+            Process.Start(processStartInfo);
         }
+        catch (Exception ex)
+        {
+            // Handle any exceptions that occur during execution
+        }
+    }
+
+
+
+    private void btnShutdown_Click(object sender, RoutedEventArgs e)
+    {
+        cmdExec(@"Scripts\\PowerOptions\\cmd_shutdown.bat");
+    }
+
+    private void btnRestart_Click(object sender, RoutedEventArgs e)
+    {
+        cmdExec(@"Scripts\\PowerOptions\\cmd_restart.bat");
+    }
+
+    private void btnAbortSR_Click(object sender, RoutedEventArgs e)
+    {
+        cmdExec(@"Scripts\\PowerOptions\\cmd_abortpowertask.bat");
+    }
+
+    private async void btnLogOff_Click(object sender, RoutedEventArgs e)
+    {
+        ContentDialog dialog = new ContentDialog
+        {
+            Title = "Quick Restart",
+            Content = "The quick restart button will logoff your computer, and it can't be canceled. Do you want to continue?",
+            PrimaryButtonText = "Yes",
+            CloseButtonText = "No"
+        };
+        dialog.XamlRoot = btnLogOff.XamlRoot;
+        dialog.DefaultButton = ContentDialogButton.Close;
+        ContentDialogResult result = await dialog.ShowAsync();
+        if (result == ContentDialogResult.Primary)
+        {
+            cmdExec(@"Scripts\\PowerOptions\\cmd_logoff.bat");
+        }
+        else
+        {
+            return;
+        }
+
     }
 }

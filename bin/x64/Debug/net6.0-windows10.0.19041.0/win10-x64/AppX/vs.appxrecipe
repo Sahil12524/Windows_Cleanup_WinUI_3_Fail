@@ -29,21 +29,25 @@
     <AppXManifest Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-26T08:16:08.578</Modified>
+      <Modified>2023-07-02T11:41:11.773</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-06-26T08:16:08.362</Modified>
+      <Modified>2023-07-02T11:41:11.552</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.runtimeconfig.json">
       <PackagePath>Windows_Cleanup_WinUI_3.runtimeconfig.json</PackagePath>
-      <Modified>2023-06-26T08:16:08.320</Modified>
+      <Modified>2023-07-02T11:41:11.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.dll">
       <PackagePath>Windows_Cleanup_WinUI_3.dll</PackagePath>
-      <Modified>2023-06-26T08:16:07.973</Modified>
+      <Modified>2023-07-02T11:41:11.306</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\AdvancedTools\CheckDiskError.bat">
+      <PackagePath>Scripts\AdvancedTools\CheckDiskError.bat</PackagePath>
+      <Modified>2021-11-22T07:51:37.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\AdvancedTools\cmd_DISM.bat">
       <PackagePath>Scripts\AdvancedTools\cmd_DISM.bat</PackagePath>
@@ -53,17 +57,13 @@
       <PackagePath>Scripts\AdvancedTools\cmd_sfcscan.bat</PackagePath>
       <Modified>2023-05-23T15:16:23.440</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\BasicTools\CheckDiskError.bat">
-      <PackagePath>Scripts\BasicTools\CheckDiskError.bat</PackagePath>
-      <Modified>2021-11-22T07:51:37.724</Modified>
+    <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\AdvancedTools\SSDOPTIMIZE.bat">
+      <PackagePath>Scripts\AdvancedTools\SSDOPTIMIZE.bat</PackagePath>
+      <Modified>2022-05-27T14:13:10.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\BasicTools\cleanscript.bat">
       <PackagePath>Scripts\BasicTools\cleanscript.bat</PackagePath>
       <Modified>2023-05-15T20:51:09.466</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\BasicTools\SSDOPTIMIZE.bat">
-      <PackagePath>Scripts\BasicTools\SSDOPTIMIZE.bat</PackagePath>
-      <Modified>2022-05-27T14:13:10.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\Scripts\BasicTools\WindowsUpdateCacheRemove.bat">
       <PackagePath>Scripts\BasicTools\WindowsUpdateCacheRemove.bat</PackagePath>
@@ -107,11 +107,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Windows_Cleanup_WinUI_3.exe</PackagePath>
-      <Modified>2023-06-26T08:16:07.991</Modified>
+      <Modified>2023-07-02T11:41:11.324</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Users\sahil\source\repos\Windows_Cleanup_WinUI_3\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Windows_Cleanup_WinUI_3.deps.json">
       <PackagePath>Windows_Cleanup_WinUI_3.deps.json</PackagePath>
-      <Modified>2023-06-26T08:16:08.318</Modified>
+      <Modified>2023-07-02T11:41:11.483</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sahil\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.18\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

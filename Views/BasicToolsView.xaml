@@ -17,7 +17,7 @@
             <VisualStateGroup x:Name="WindowStates">
                 <VisualState x:Name="WideState">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1370"/>
+                        <AdaptiveTrigger MinWindowWidth="1382"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="MainGrid.HorizontalAlignment" Value="Center"/>
@@ -43,7 +43,7 @@
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel x:Name="ExpanderStack" Padding="30,25,30,0" Grid.Row="0">
+            <StackPanel x:Name="ExpanderStack" Padding="59,25,50,0" Grid.Row="0">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -71,7 +71,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack1" Padding="30,3,30,0" Grid.Row="1">
+            <StackPanel x:Name="ExpanderStack1" Padding="59,3,50,0" Grid.Row="1">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -99,7 +99,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack2" Padding="30,3,30,0" Grid.Row="2">
+            <StackPanel x:Name="ExpanderStack2" Padding="59,3,50,0" Grid.Row="2">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>
@@ -126,7 +126,7 @@
                 </Expander>
             </StackPanel>
 
-            <StackPanel x:Name="ExpanderStack3" Padding="30,3,30,0" Grid.Row="3">
+            <StackPanel x:Name="ExpanderStack3" Padding="59,3,50,0" Grid.Row="3">
                 <StackPanel.Resources>
                     <Style TargetType="Expander">
                         <Setter Property="HorizontalAlignment" Value="Stretch"/>

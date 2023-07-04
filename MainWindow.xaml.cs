@@ -2,13 +2,10 @@
 // Licensed under the MIT License.
 
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices; // For DllImport
-using Microsoft.UI;
 using Microsoft.UI.Composition.SystemBackdrops;
-using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
@@ -16,7 +13,6 @@ using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Navigation;
 using Windows_Cleanup_WinUI_3.Views;
 using WinRT; // required to support Window.As<ICompositionSupportsSystemBackdrop>()
-using WinRT.Interop;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -34,218 +30,26 @@ public sealed partial class MainWindow : Window
 
     private NavigationViewItem _lastItem;
 
-    private AppWindow m_AppWindow;
-
     public MainWindow()
     {
-        this.InitializeComponent();
         var exists = System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1;
         if (System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1) System.Diagnostics.Process.GetCurrentProcess().Kill();
-        m_AppWindow = GetAppWindowForCurrentWindow();
-        m_AppWindow.Changed += AppWindow_Changed;
+        InitializeComponent();
         Activated += MainWindow_Activated;
         TrySetSystemBackdrop();
-        if (AppWindowTitleBar.IsCustomizationSupported())
-        {
-            var titleBar = m_AppWindow.TitleBar;
-            titleBar.ExtendsContentIntoTitleBar = true;
-            AppTitleBar.Loaded += AppTitleBar_Loaded;
-            AppTitleBar.SizeChanged += AppTitleBar_SizeChanged;
-            titleBar.IconShowOptions = IconShowOptions.ShowIconAndSystemMenu;
-            m_AppWindow.SetIcon("Assets/cleaning broom.ico");
-            SetTitleBarColors();
-        }
-        else
-        {
-            // In the case that title bar customization is not supported, hide the custom title bar
-            // element.
-            AppTitleBar.Visibility = Visibility.Collapsed;
-
-            // Show alternative UI for any functionality in
-            // the title bar, such as search.
-        }
-        //ExtendsContentIntoTitleBar = true;
-        //SetTitleBar(AppTitleBar);
+        ExtendsContentIntoTitleBar = true;
+        SetTitleBar(AppTitleBar);
     }
 
-    private AppWindow GetAppWindowForCurrentWindow()
+    private void NavigationViewControl_DisplayModeChanged(NavigationView sender, NavigationViewDisplayModeChangedEventArgs args)
     {
-        IntPtr hWnd = WindowNative.GetWindowHandle(this);
-        WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
-        return AppWindow.GetFromWindowId(wndId);
-    }
-
-    [DllImport("Shcore.dll", SetLastError = true)]
-    internal static extern int GetDpiForMonitor(IntPtr hmonitor, Monitor_DPI_Type dpiType, out uint dpiX, out uint dpiY);
-
-    internal enum Monitor_DPI_Type : int
-    {
-        MDT_Effective_DPI = 0,
-        MDT_Angular_DPI = 1,
-        MDT_Raw_DPI = 2,
-        MDT_Default = MDT_Effective_DPI
-    }
-
-    private double GetScaleAdjustment()
-    {
-        IntPtr hWnd = WindowNative.GetWindowHandle(this);
-        WindowId wndId = Win32Interop.GetWindowIdFromWindow(hWnd);
-        DisplayArea displayArea = DisplayArea.GetFromWindowId(wndId, DisplayAreaFallback.Primary);
-        IntPtr hMonitor = Win32Interop.GetMonitorFromDisplayId(displayArea.DisplayId);
-
-        // Get DPI.
-        var result = GetDpiForMonitor(hMonitor, Monitor_DPI_Type.MDT_Default, out var dpiX, out var _);
-        if (result != 0)
+        AppTitleBar.Margin = new Thickness()
         {
-            throw new Exception("Could not get DPI for monitor.");
-        }
-
-        var scaleFactorPercent = (uint)(((long)dpiX * 100 + (96 >> 1)) / 96);
-        return scaleFactorPercent / 100.0;
-    }
-
-    private void SetDragRegionForCustomTitleBar(AppWindow appWindow)
-    {
-        // Check to see if customization is supported.
-        // The method returns true on Windows 10 since Windows App SDK 1.2, and on all versions of
-        // Windows App SDK on Windows 11.
-        if (AppWindowTitleBar.IsCustomizationSupported()
-            && appWindow.TitleBar.ExtendsContentIntoTitleBar)
-        {
-            var scaleAdjustment = GetScaleAdjustment();
-            try
-            {
-                RightPaddingColumn.Width = new GridLength(appWindow.TitleBar.RightInset / scaleAdjustment);
-            }
-            catch (ArgumentException)
-            {
-
-            }
-
-            LeftPaddingColumn.Width = new GridLength(appWindow.TitleBar.LeftInset / scaleAdjustment);
-
-            List<Windows.Graphics.RectInt32> dragRectsList = new();
-
-            Windows.Graphics.RectInt32 dragRectL;
-            dragRectL.X = (int)((LeftPaddingColumn.ActualWidth) * scaleAdjustment);
-            dragRectL.Y = 0;
-            dragRectL.Height = (int)(AppTitleBar.ActualHeight * scaleAdjustment);
-            dragRectL.Width = (int)((IconColumn.ActualWidth
-                                    + TitleColumn.ActualWidth
-                                    + LeftDragColumn.ActualWidth) * scaleAdjustment);
-            dragRectsList.Add(dragRectL);
-
-            Windows.Graphics.RectInt32 dragRectR;
-            dragRectR.X = (int)((LeftPaddingColumn.ActualWidth
-                                + IconColumn.ActualWidth
-                                + AppTitleTextBlock.ActualWidth
-                                + LeftDragColumn.ActualWidth) * scaleAdjustment);
-            dragRectR.Y = 0;
-            dragRectR.Height = (int)(AppTitleBar.ActualHeight * scaleAdjustment);
-            dragRectR.Width = (int)(RightDragColumn.ActualWidth * scaleAdjustment);
-            dragRectsList.Add(dragRectR);
-
-            Windows.Graphics.RectInt32[] dragRects = dragRectsList.ToArray();
-
-            appWindow.TitleBar.SetDragRectangles(dragRects);
-        }
-    }
-
-    private void AppWindow_Changed(AppWindow sender, AppWindowChangedEventArgs args)
-    {
-        // Check to see if customization is supported.
-        // The method returns true on Windows 10 since Windows App SDK 1.2, and on all versions of
-        // Windows App SDK on Windows 11.
-        if (args.DidPresenterChange
-            && AppWindowTitleBar.IsCustomizationSupported())
-        {
-            switch (sender.Presenter.Kind)
-            {
-                case AppWindowPresenterKind.CompactOverlay:
-                    // Compact overlay - hide custom title bar
-                    // and use the default system title bar instead.
-                    AppTitleBar.Visibility = Visibility.Collapsed;
-                    sender.TitleBar.ResetToDefault();
-                    break;
-
-                case AppWindowPresenterKind.FullScreen:
-                    // Full screen - hide the custom title bar
-                    // and the default system title bar.
-                    AppTitleBar.Visibility = Visibility.Collapsed;
-                    sender.TitleBar.ExtendsContentIntoTitleBar = true;
-                    break;
-
-                case AppWindowPresenterKind.Overlapped:
-                    // Normal - hide the system title bar
-                    // and use the custom title bar instead.
-                    AppTitleBar.Visibility = Visibility.Visible;
-                    sender.TitleBar.ExtendsContentIntoTitleBar = true;
-                    SetDragRegionForCustomTitleBar(sender);
-                    break;
-
-                default:
-                    // Use the default system title bar.
-                    sender.TitleBar.ResetToDefault();
-                    break;
-            }
-        }
-    }
-
-    private void AppTitleBar_Loaded(object sender, RoutedEventArgs e)
-    {
-        // Check to see if customization is supported.
-        // The method returns true on Windows 10 since Windows App SDK 1.2, and on all versions of
-        // Windows App SDK on Windows 11.
-        if (AppWindowTitleBar.IsCustomizationSupported())
-        {
-            SetDragRegionForCustomTitleBar(m_AppWindow);
-        }
-    }
-
-    private void AppTitleBar_SizeChanged(object sender, SizeChangedEventArgs e)
-    {
-        // Check to see if customization is supported.
-        // The method returns true on Windows 10 since Windows App SDK 1.2, and on all versions of
-        // Windows App SDK on Windows 11.
-        if (AppWindowTitleBar.IsCustomizationSupported()
-            && m_AppWindow.TitleBar.ExtendsContentIntoTitleBar)
-        {
-            // Update drag region if the size of the title bar changes.
-            SetDragRegionForCustomTitleBar(m_AppWindow);
-        }
-    }
-
-    private bool SetTitleBarColors()
-    {
-        // Check to see if customization is supported.
-        // The method returns true on Windows 10 since Windows App SDK 1.2, and on all versions of
-        // Windows App SDK on Windows 11.
-        if (AppWindowTitleBar.IsCustomizationSupported())
-        {
-            if (m_AppWindow is null)
-            {
-                m_AppWindow = GetAppWindowForCurrentWindow();
-            }
-            var titleBar = m_AppWindow.TitleBar;
-
-            // Set active window colors
-            // Note: No effect when app is running on Windows 10 since color customization is not
-            // supported.
-
-            // Set inactive window colors
-            // Note: No effect when app is running on Windows 10 since color customization is not
-            // supported.
-            titleBar.ButtonBackgroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonBackground"]).Color;
-            titleBar.ButtonInactiveBackgroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonBackground"]).Color;
-            titleBar.ButtonHoverBackgroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonBackgroundPointerOver"]).Color;
-            titleBar.ButtonPressedBackgroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonBackgroundPressed"]).Color;
-            titleBar.ButtonForegroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonStroke"]).Color;
-            titleBar.ButtonInactiveForegroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonStroke"]).Color;
-            titleBar.ButtonHoverForegroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonStrokePointerOver"]).Color;
-            titleBar.ButtonPressedForegroundColor = ((SolidColorBrush)App.Current.Resources["WindowCaptionButtonStrokePressed"]).Color;
-            return true;
-        }
-        return false;
+            Left = sender.CompactPaneLength * (sender.DisplayMode == NavigationViewDisplayMode.Minimal ? 2 : 1),
+            Top = AppTitleBar.Margin.Top,
+            Right = AppTitleBar.Margin.Right,
+            Bottom = AppTitleBar.Margin.Bottom
+        };
     }
 
     class WindowsSystemDispatcherQueueHelper

@@ -17,7 +17,7 @@ public sealed partial class AdvancedToolsView : Page
 {
     public AdvancedToolsView()
     {
-        this.InitializeComponent();
+        InitializeComponent();
     }
 
     private void cmdExec(string? path)

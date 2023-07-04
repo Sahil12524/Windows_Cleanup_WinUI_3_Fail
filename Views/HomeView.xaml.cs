@@ -15,7 +15,7 @@ public sealed partial class HomeView : Page
 {
     public HomeView()
     {
-        this.InitializeComponent();
+        InitializeComponent();
 
     }
 }

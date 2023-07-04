@@ -20,7 +20,7 @@ public sealed partial class NetToolsView : Page
 
     public NetToolsView()
     {
-        this.InitializeComponent();
+        InitializeComponent();
     }
 
     private void cmdExec(string? path)

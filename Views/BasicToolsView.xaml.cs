@@ -21,7 +21,7 @@ public sealed partial class BasicToolsView : Page
 
     public BasicToolsView()
     {
-        this.InitializeComponent();
+        InitializeComponent();
     }
 
     private void cmdExec(string? path)

@@ -1,0 +1,161 @@
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Page
+    x:Class="Windows_Cleanup_WinUI_3.Views.BasicToolsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_Cleanup_WinUI_3.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:BackdropMaterial.ApplyToRootOrPageBackground="True">
+    <!--Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">-->
+
+    <ScrollViewer>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='2' x:Name="WindowStates">
+                <VisualState x:ConnectionId='3' x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1382"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="MainGrid.HorizontalAlignment" Value="Center"/>
+                        <Setter Target="MainGrid.Width" Value="1060px"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='4' x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Grid x:ConnectionId='5' x:Name="MainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel x:ConnectionId='6' x:Name="ExpanderStack" Padding="59,25,50,0" Grid.Row="0">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid Height="68px">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Temp files remove" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:ConnectionId='13' x:Name="btnTempFilesRemove" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80"                                  Grid.Column="1"/>
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Clean temporary files from Temp, %temp%, Prefetch all at once. <LineBreak/>
+                            Makes computer feels responisive. <LineBreak/>
+                            Note: Do not use this Button while any software installer is running!
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='7' x:Name="ExpanderStack1" Padding="59,3,50,0" Grid.Row="1">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid Height="68px">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Windows Update Cache Remove" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:ConnectionId='12' x:Name="btnWindowsUpdateCacheClean" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80"                                          Grid.Column="1"/>
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Delete all Downloaded Windows Updates. <LineBreak/>
+                            Helps save C:\ Drive Space after a Windows Update. <LineBreak/>
+                            Note: Do not use this Button while Windows is updating.
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='8' x:Name="ExpanderStack2" Padding="59,3,50,0" Grid.Row="2">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid Height="68px">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Disk Cleanup" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:ConnectionId='11' x:Name="btnDiskCleanup" Content="Clean" HorizontalAlignment="Right" FontSize="14px" Width="80"                              Grid.Column="1"/>
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Disk cleanup is a tool to cleanup junk in more advanced way. <LineBreak/>
+                            This tool can not clean temp and prefetch files, but this can delete Windows.old folder.
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='9' x:Name="ExpanderStack3" Padding="59,3,50,0" Grid.Row="3">
+                <StackPanel.Resources>
+                    <Style TargetType="Expander">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Expander>
+                    <Expander.Header>
+                        <Grid Height="68px">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Disk Defragment" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}" Grid.Column="0"/>
+                            <Button x:ConnectionId='10' x:Name="btnDiskDefragment" Content="Defrag" HorizontalAlignment="Right" FontSize="14px" Width="80"                                 Grid.Column="1"/>
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock TextWrapping="WrapWholeWords" Style="{StaticResource BodyTextBlockStyle}">
+                            Disk Defragment is a tool that will defrag your HDD or Trime your SSD. <LineBreak/>
+                            Defraging the disk reduce loading times of apps, accessing files faster. <LineBreak/>
+                            Defraging the disk also makes the games stutter free. <LineBreak/>
+                            Note: Do not defrag the disk while playing games. Doing so will makes the games <LineBreak/>
+                            load slow and sometimes even stutter the games.
+                        </TextBlock>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>
+

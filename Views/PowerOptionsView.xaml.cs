@@ -19,7 +19,7 @@ public sealed partial class PowerOptionsView : Page
 {
     public PowerOptionsView()
     {
-        this.InitializeComponent();
+        InitializeComponent();
     }
 
     private void cmdExec(string? path)

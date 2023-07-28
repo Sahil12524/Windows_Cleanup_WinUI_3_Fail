@@ -9,8 +9,10 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Window.SystemBackdrop>
+        <MicaBackdrop/>
+    </Window.SystemBackdrop>
     <Grid>
-
         <Grid x:ConnectionId='2' x:Name="AppTitleBar"
               Canvas.ZIndex="1"
               Height="{Binding ElementName=NavView, Path=CompactPaneLength}"

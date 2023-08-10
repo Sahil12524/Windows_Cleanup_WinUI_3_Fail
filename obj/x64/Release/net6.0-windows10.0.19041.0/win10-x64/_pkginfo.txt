@@ -1,1 +1,0 @@
-E:\Users\sahil\source\repos\Setup\Windows Cleanup WinUI 3\Release\x64\AppPackages\Windows_Cleanup_WinUI_3_1.0.0.0_Test\Windows_Cleanup_WinUI_3_1.0.0.0_x64.msix
